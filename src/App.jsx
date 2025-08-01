@@ -1,21 +1,14 @@
-import React, { useState } from "react";
+import React from 'react'
+import Form from './Form'
+import Counter from './assets/Components/Counter'
 
 const App = () => {
-  const [count, setCount] = useState(0);
-
-   const headingStyle = {
-    color: count <= 0 ? "red" : "black"
-  };
-
   return (
-    <div id="container">
-      <h1 style={headingStyle}>{count}</h1>
-      <div id="btn">
-        <button onClick={() => setCount(count - 1)}>Decrement</button>
-        <button onClick={() => setCount(count + 1)}>Increment</button>
-      </div>
-    </div>
-  );
-};
+    <>
+    {/* <Counter/> */}
+    <Form/>
+    </>
+  )
+}
 
-export default App; 
+export default App
